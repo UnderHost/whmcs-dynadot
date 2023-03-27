@@ -115,7 +115,7 @@ function dynadot_RenewDomain(array $params): array
  */
 function dynadot_GetNameservers($params): array
 {
-    return (new Dynadot($params))->getNameServers();
+    return (new Dynadot($params))->getNameservers();
 }
 
 /**
@@ -130,7 +130,7 @@ function dynadot_GetNameservers($params): array
  */
 function dynadot_SaveNameservers($params): array
 {
-    return (new Dynadot($params))->saveNameServers();
+    return (new Dynadot($params))->saveNameservers();
 }
 
 /**
