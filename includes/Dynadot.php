@@ -99,7 +99,7 @@ class Dynadot
     /**
      * Fetch current nameservers.
      */
-    public function getNameServers(): array
+    public function getNameservers(): array
     {
         try {
             $response = $this->call('domain_info');
@@ -121,7 +121,7 @@ class Dynadot
     /**
      * Save nameserver changes.
      */
-    public function saveNameServers(): array
+    public function saveNameservers(): array
     {
         try {
             $data = [];
