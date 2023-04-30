@@ -1,6 +1,8 @@
 # Dynadot Domain Registrar module for WHMCS
 Dynadot Domain Register Module for WHMCS.
 
+This FREE Dynadot Domain Registrar Module for WHMCS allows you to integrate Dynadot as a domain registrar within your WHMCS installation. Please note that no support is provided for this free WHMCS module, as it is a beta product intended for users to create their own modules based on the provided files. If you require a customized version tailored to your WHMCS installation, with support for PHP 8.4 and WHMCS 8.7-9, please contact us at https://underhost.com. Our developers are ready to assist you!
+
 ## This is beta release. You can try and report issues here.
 
 ## Installation
@@ -17,11 +19,8 @@ Dynadot Domain Register Module for WHMCS.
  - GetNameservers/SetNameservers fix
 
 
-## Contributors
-
-<a href="https://github.com/arafatkn" target="_blank"><img src="https://avatars.githubusercontent.com/u/80309866?v=4" title="arafatkn" width="80" height="80"></a>
-<a href="https://github.com/UnderHost" target="_blank"><img src="https://avatars.githubusercontent.com/u/17486506?s=96&v=4" title="arafatkn" width="80" height="80"></a>
-
+## About the Software
+The Dynadot Domain Registrar Module for WHMCS is a registrar module that integrates the Dynadot domain registration services into your WHMCS platform. This allows you to manage domain registrations, renewals, and transfers directly from your WHMCS installation. The free version of the module provides essential features for managing domain registrations with Dynadot.
 
 ## License
 
