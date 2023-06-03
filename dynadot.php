@@ -1,10 +1,5 @@
 <?php
-/**
- * @title   WHMCS Dynadot Domain Register Module
- *
- * @author  Arafat Islam
- * @license MIT
- */
+
 
 if (!defined("WHMCS")) {
     die("This file cannot be accessed directly");
@@ -50,13 +45,6 @@ function dynadot_getConfigArray(): array
  *
  * Attempt to register a domain with the domain registrar.
  *
- * This is triggered when the following events occur:
- * * Payment received for a domain registration order
- * * When a pending domain registration order is accepted
- * * Upon manual request by an admin user
- *
- * @param array $params common module parameters
- *
  * @return array
  */
 function dynadot_RegisterDomain(array $params): array
@@ -67,14 +55,6 @@ function dynadot_RegisterDomain(array $params): array
 /**
  * Transfer a domain.
  *
- * Attempt to create a domain transfer request for a given domain.
- *
- * This is triggered when the following events occur:
- * * Payment received for a domain transfer order
- * * When a pending domain transfer order is accepted
- * * Upon manual request by an admin user
- *
- * @param array $params common module parameters
  *
  * @return array
  */
@@ -86,16 +66,6 @@ function dynadot_TransferDomain(array $params): array
 /**
  * Renew a domain.
  *
- * Attempt to renew/extend a domain for a given number of years.
- *
- * This is triggered when the following events occur:
- * * Payment received for a domain renewal order
- * * When a pending domain renewal order is accepted
- * * Upon manual request by an admin user
- *
- * @param array $params common module parameters
- *
- * @see https://developers.whmcs.com/domain-registrars/module-parameters/
  *
  * @return array
  */
@@ -107,9 +77,6 @@ function dynadot_RenewDomain(array $params): array
 /**
  * Fetch current nameservers.
  *
- * This function should return an array of nameservers for a given domain.
- *
- * @param array $params common module parameters
  *
  * @return array
  */
@@ -121,11 +88,6 @@ function dynadot_GetNameservers($params): array
 /**
  * Save nameserver changes.
  *
- * This function should submit a change of nameservers request to the
- * domain registrar.
- *
- * @param array $params common module parameters
- *
  * @return array
  */
 function dynadot_SaveNameservers($params): array
@@ -135,11 +97,6 @@ function dynadot_SaveNameservers($params): array
 
 /**
  * Get registrar lock status.
- *
- * Also known as Domain Lock or Transfer Lock status.
- *
- * @param array $params common module parameters
- *
  * @return string|array Lock status or error message
  */
 function dynadot_GetRegistrarLock($params)
@@ -150,7 +107,6 @@ function dynadot_GetRegistrarLock($params)
 /**
  * Set registrar lock status.
  *
- * @param array $params common module parameters
  *
  * @return array
  */
