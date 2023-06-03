@@ -102,7 +102,7 @@ class Dynadot
     public function getNameservers(): array
     {
         try {
-            $response = $this->call('domain_info');
+            $response = $this->call('get_ns');
             $nameservers = $response->xpath('//NameServerSettings/NameServers')[0];
             $nameservers = array_filter(self::xmlToArray($nameservers->ServerName), 'is_string');
 
